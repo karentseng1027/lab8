@@ -1,13 +1,14 @@
 function initMap() {
 	// add your code here
-	L.mapquest.key = 'EENWeYx21Rmoxbe0G6xqLvmUMyMDPWUq';
+	L.mapquest.key = "EENWeYx21Rmoxbe0G6xqLvmUMyMDPWUq";
 
 	// 'map' refers to a <div> element with the ID map
-	L.mapquest.map('map', {
-		center: [32.883066, -117.237126],
+	var map = L.mapquest.map('map', {
+		center: [32.88, -117.23],
 		layers: L.mapquest.tileLayer('map'),
-		zoom: 12
+		zoom: 12,
+		zoomControl: false
 	});
 
-	L.marker([50.5, 30.5]).addTo(map);
+	L.marker([32.88, -117.23]).addTo(map);
 }
